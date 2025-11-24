@@ -20,11 +20,6 @@ export default function EnvPage() {
         vars[key] = process.env[key] || '';
       }
     }
-    // To make this more useful for the bug bash,
-    // we'll add a placeholder for server-side vars.
-    // Replace this with an actual API call in a real scenario.
-    vars['MY_VAR_FROM_YAML'] = 'yaml_value (client-side placeholder)';
-    vars['NEW_VAR_FROM_BACKEND'] = 'backend_value (client-side placeholder)';
 
     // Simulate fetching all env vars from an API route
     fetch('/api/env')

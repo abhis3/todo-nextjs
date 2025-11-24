@@ -1,6 +1,16 @@
 # Environment variables and secrets
-# env:
-#   - variable: MY_SECRET_KEY
-#     secret: projects/YOUR_PROJECT_ID/secrets/YOUR_SECRET_NAME
-#   - variable: ANOTHER_SECRET
-#     secret: projects/YOUR_PROJECT_ID/secrets/ANOTHER_SECRET_NAME/versions/latest
+env:
+  - variable: MY_VAR_FROM_YAML
+    value: value_from_apphosting_yaml
+  - variable: ANOTHER_VAR
+    value: another_value_from_yaml
+  - variable: API_KEY_TEST
+    value: test_api_key_123
+  - variable: DB_HOST
+    value: localhost
+  - variable: DB_PORT
+    value: "5432"
+  - variable: FEATURE_FLAG_NEW_UI
+    value: "true"
+  - variable: MAX_RETRY_ATTEMPTS
+    value: "3"
