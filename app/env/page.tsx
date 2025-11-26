@@ -21,6 +21,7 @@ export default function EnvPage() {
       }
     }
 
+
     // Simulate fetching all env vars from an API route
     fetch('/api/env')
       .then(res => res.json())
